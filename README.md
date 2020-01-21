@@ -23,11 +23,11 @@
 Portfolio for professional DJ.
 
 ## View desktop
-![](img/)
+![KatePortfolioDekstop](img/KatePortfolioDekstop.png)
 
 ## View mobile
 
-![](img/)
+![KatePortfolioMobile](img/KatePortfolioMobile.png)
 
 ## Author
 
