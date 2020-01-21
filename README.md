@@ -1,6 +1,6 @@
-# DESIGNER PORTFOLIO
+# DJ Kate PORTFOLIO
 
-> Portfolio for designer
+> Portfolio for DJ Kate
 
 ## Contents
 
@@ -20,7 +20,7 @@
 
 ## Description
 
-Portfolio for designer
+Portfolio for professional DJ.
 
 ## View desktop
 ![](img/)
@@ -39,5 +39,5 @@ David Burdelak
 
 ## License
 
-The DESIGNER PORTFOLIO is released under the
+The DJ Kate PORTFOLIO is released under the
 [MIT license](https://opensource.org/licenses/MIT).
