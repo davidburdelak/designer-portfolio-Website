@@ -130,6 +130,14 @@ nav a#openup {
 	border: 2px solid #fbff47;
 }
 
+.more:focus {
+	outline: 0;
+}
+
+audio:focus { 
+	outline: 0; 
+}
+
 .section {
 	padding: 2rem 0;
 }
