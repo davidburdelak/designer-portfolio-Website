@@ -26,7 +26,7 @@
 
 Portfolio for professional DJ.
 
-## View desktop
+## View
 ![DjKateMockup](img/dj_kate_mockup.png)
 
 ## Author
