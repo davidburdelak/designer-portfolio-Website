@@ -10,14 +10,16 @@
 	<meta name="description" content="✔️ I Will Play At Your Event ♥ Concerts, Clubs And Much More 💃 Immediate Availability 📅 DJ All Over The USA 🇺🇸">
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="DJ KATE 🎧 professional DJ 👌 portfolio" />
+	<meta property="og:title" content="DJ KATE 🎧 professional DJ 👌" />
 	<meta property="og:description" content="✔️ I Will Play At Your Event ♥ Concerts, Clubs And Much More 💃 Immediate Availability 📅 DJ All Over The USA 🇺🇸" />
 	<meta property="og:url" content="https://davidburdelak.github.io/dj-kate-portfolio-Website/" />
 	<meta property="og:image" content="img/screenshot.png" />
+	<title>DJ KATE 🎧 professional DJ 👌</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ "crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
 	<link rel="stylesheet" href="css/style.css">
-	<title>DJ KATE 🎧 professional DJ 👌 portfolio</title>
 </head>
 
 <body>
@@ -26,19 +28,19 @@
 			<nav class='cf'>
 				<ul class='cf'>
 					<li>
-						<a href='#contact'>CONTACT</a>
+						<a href='#contact'>Contact</a>
 					</li>
 					<li>
-						<a href='#aboutMe'>ABOUT ME</a>
+						<a href='#aboutMe'>About me</a>
 					</li>
 					<li>
-						<a href='#spotify'>SPOTIFY</a>
+						<a href='#spotify'>Spotify</a>
 					</li>
 					<li>
-						<a href='#music'>ALBUM</a>
+						<a href='#music'>Album</a>
 					</li>
 					<li class="hide-on-small">
-						<a href="#showcase">HOME</a>
+						<a href="#showcase">Home</a>
 					</li>
 				</ul>
 				<a href='#' id='openup'>DJ KATE</a>
@@ -47,7 +49,14 @@
 		<div class="section-main container">
 			<h3 class="headerYellowText">NOW YOU CAN WATCH THE TALENT</h3>
 			<h1 class="headerWhiteText">Hi! I'm Kate</h1>
-			<a href='#music'><button class="more">SEE MORE</button></a>
+			<a href="#music" class="scroll-down">
+				<div class="mouse">
+					<span></span>
+				</div>
+				<div class="arrow">
+					<span></span>
+				</div>
+			</a>
 		</div>
 	</div>
 
@@ -57,31 +66,62 @@
 				<i class="fas fa-music"></i> New Album
 			</h2>
 			<h3>20 million views | 5 collaborations</h3>
-			<audio controls muted class="panelMusic">
-				<source src="music/PostMaloneMusic.mp3" type="audio/mpeg">
-			</audio>
+			<div class="player">
+				<div class="container">
+					<div class="img">
+						<img src="img/cover1.jpg" alt="" />
+					</div>
+					<div class="title">
+						<h1>DJ KATE</h1>
+					</div>
+					<div class="time">
+						00:00
+						<span></span>
+						00:00
+					</div>
+					<div class="seek">
+						<div class="fill"></div>
+					</div>
+				</div>
+				<div class="audio-btns">
+					<div class="play-btns">
+					<a onclick="prevAudio()"><i class="fa fa-backward"></i></a>
+					<a class="play-pause" onclick="togglePlayPause()">
+						<i class="fa fa-play"></i>
+					</a>
+					<a onclick="nextAudio()"><i class="fa fa-forward"></i></a>
+					</div>
+					<div class="repeat-btns">
+						<span>
+							<button class="decrease" onclick="decreaseVolume()">-</button>
+							<a class="volume-up"><i class="fa fa-volume-up"></i></a>
+							<button class="increase" onclick="increaseVolume()">+</button>
+						</span>
+					</div>
+				</div>
+			</div>
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-			<a href="#" class="btn" id="button" target="_blank"><span>Buy a new album</span></a><br><br>
-			<img class="albumPhoto" src="img/albumPhoto.jpg" alt="">
+			<a href="" class="btn" id="button" target="_blank"><span>Buy a new album</span></a><br><br>
 		</div>
 	</section>
 
 	<section id="spotify" class="section">
 		<div class="container">
-			<h3>You can also listen to me on Spotify!</h3>
+			<h3><i style="font-size: 3.5rem" class="fa">&#xf1bc;</i></i>  You can also listen to me on Spotify!</h3>
+			<hr class="linia1" width="60%;">
 			<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit
 			explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque
 			in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium
 			soluta delectus!</p>
-			<a href="https://www.spotify.com" class="btn" id="button" target="_blank"><span>Go to Spotify</span></a>
+			<a href="https://www.spotify.com" class="btn" id="button2" target="_blank"><span>Go to Spotify</span></a>
 			<p class="text-primary">My Spotify promo code for you: 50dA2z5x</p>
-			<img src="img/spotifyScreenshot.png" alt="">
 		</div>
 	</section>
 
 	<section id="aboutMe" class="section">
 		<div class="container">
 			<h3>Get to know me!</h3>
+			<hr class="linia1" width="60%;">
 			<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit
 			explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque
 			in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium
@@ -93,15 +133,15 @@
 		<div class="container">
 			<div class="contact">
 				<div>
-					<img src="img/contactPhoto.jpg" alt="">
+					<img src="img/ctp.png" alt="">
 				</div>
 				<div>
 					<h2>Contact</h2>
-					<p>Phone: <a href="tel:+24 602 215 214" style="color: black">+24 602 215 214</a></p>
-					<p>Email: <a href="mailto:loremipsum@ipsum.com" style="color: black">loremipsum@ipsum.com</a></p>
-					<p>Fanpage: <a href="https://facebook.com" class="fanpage" target="_blank">Click here</a></p>
+					<p style="color: #0c0c0c;"><b>Phone</b>: +24 602 215 214</p>
+					<p style="color: #0c0c0c;"><b>Email</b>: loremipsum@ipsum.com</p>
+					<p><b>Fanpage</b>: <a href="https://facebook.com" class="fanpage" target="_blank">Click here</a></p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<hr>
+					<hr class="linia1" style="margin-right: 50%;">
 					<a href="#showcase" class="text-secondary">
 						<i class="fas fa-chevron-right"></i> Back To Top
 					</a>
@@ -113,6 +153,26 @@
 	<footer>
 		<div class="container">
 			<div class="footer-cols">
+				<ul>
+					<li>
+						Navigation
+					</li>
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#music">Music</a>
+					</li>
+					<li>
+						<a href="#spotify">Spotify</a>
+					</li>
+					<li>
+						<a href="#aboutMe">About me</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
 				<ul>
 					<li>
 						<i class="fas fa-music"></i> Album 1
@@ -155,26 +215,6 @@
 				</ul>
 				<ul>
 					<li>
-						<i class="fas fa-music"></i> Album 3
-					</li>
-					<li>
-						<a href="#">1. Lorem Ipsum</a>
-					</li>
-					<li>
-						<a href="#">2. Lorem Ipsum</a>
-					</li>
-					<li>
-						<a href="#">3. Lorem Ipsum</a>
-					</li>
-					<li>
-						<a href="#">4. Lorem Ipsum</a>
-					</li>
-					<li>
-						<a href="#">5. Lorem Ipsum</a>
-					</li>
-				</ul>
-				<ul>
-					<li>
 						Media
 					</li>
 					<li>
@@ -196,11 +236,10 @@
 			</div>
 		</div>
 		<div class="footer-bottom text-center">
-			<span>Copyright &copy; 2020 DJ KATE | Created by <a href="https://davidburdelak.pl" target="_blank">David Burdelak</a></span>
+			<span>&copy; <script>document.write(new Date().getFullYear());</script> DJ KATE | Created by <a href="https://davidburdelak.pl" target="_blank">David Burdelak</a></span>
 		</div>
 	</footer>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
 
