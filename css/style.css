@@ -30,6 +30,11 @@ body::-webkit-scrollbar-thumb {
 	box-shadow: var(--box-shadow);
 }
 
+.loading {
+	overflow: hidden;
+	height: 100vh;
+}
+
 .loader-wrapper {
 	width: 100%;
 	height: 100%;
@@ -52,15 +57,15 @@ body::-webkit-scrollbar-thumb {
 	animation: loader 2s infinite ease;
   }
   
-  .loader-inner {
+.loader-inner {
 	vertical-align: top;
 	display: inline-block;
 	width: 100%;
 	background-color: #ffe900;
 	animation: loader-inner 2s infinite ease-in;
-  }
+}
   
-  @keyframes loader {
+@keyframes loader {
 	0% {
 	  transform: rotate(0deg);
 	}
@@ -80,9 +85,9 @@ body::-webkit-scrollbar-thumb {
 	100% {
 	  transform: rotate(360deg);
 	}
-  }
+}
   
-  @keyframes loader-inner {
+@keyframes loader-inner {
 	0% {
 	  height: 0%;
 	}
@@ -102,7 +107,7 @@ body::-webkit-scrollbar-thumb {
 	100% {
 	  height: 0%;
 	}
-  }
+}
 
 img {
 	width: 100%;
